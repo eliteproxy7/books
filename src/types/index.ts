@@ -6,8 +6,11 @@ export interface User {
     website: string;
   }
   
-  export interface TableColumn {
-    key: string;
-    label: string;
-  }
+// src/types/index.ts
+export interface TableColumn {
+  key: string;
+  label: string;
+  slotName?: string; // Optional property for scoped slot customization
+}
+
   
